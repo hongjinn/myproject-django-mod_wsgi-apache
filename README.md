@@ -140,7 +140,7 @@ sudo apt-get update && sudo apt-get upgrade -y && sudo apt install python3.7 -y 
   * ```ALLOWED_HOSTS = ['localhost','101.42.69.777','www.example.com]```
   * Put in your EC2 ip and the name of the site you plan to buy on Google Domains
 
-* Next we also need to delete the Git folder and create a brand new one. You don't want to change this repository which holds a generic template. You are creating a new repository for your personal proejct
+* Next we also need to delete the Git folder and create a brand new one. You don't want to change this repository which holds a generic template. You are creating a new repository for your personal project
 ```
 rm -rf .git                     # Delete the folder .git which is in the exampledotcom/myproject folder
 git init                        # Do this command while in the exampledotcom/myproject folder
