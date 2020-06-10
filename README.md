@@ -215,7 +215,7 @@ sudo scp /home/ubuntu/myproject/config_files/django_project.conf /etc/apache2/si
 www     CNAME   1h     example.com.
 ```
 
-* Wait a few hours for this to catch on. Note: if you had previously paired this domain name with another ip address you might have to flush the dns cache on your browser. Otherwise when you navigate to example.com you won't see your new page. 
+* Wait a few hours for this to catch on. Note: if you had previously paired this domain name with another ip address you might have to flush the dns cache on your browser. Otherwise when you navigate to example.com you won't see your new page 
 
 # Make it https
 
