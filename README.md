@@ -127,7 +127,7 @@ sudo apt-get update && sudo apt-get upgrade -y && sudo apt install python3.7 -y 
 
 # Gather Django files
 
-* Open another bash terminal so you have two open. One for your local machine and another for the EC2
+* You should have two terminals open, one for your local machine and another for the EC2
 
 * Let's say you want your local development folder to be on your Desktop. The process will be this: develop on your local computer (ie add a "Contact Me" page) then push changes to your EC2 to see live on the web
   * Go to your Desktop and create a new folder, you can call this anything you want. For instance "exampledotcom" by doing ```mkdir '/mnt/c/Users/Hongjinn Park/Desktop/exampledotcom'```
