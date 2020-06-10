@@ -114,10 +114,10 @@ sudo hostnamectl set-hostname django-server                # Set the host name t
 sudo apt-get update && sudo apt-get upgrade -y && sudo apt install python3.7 -y && sudo apt install python3-pip -y && sudo apt install virtualenv -y && sudo apt-get install apache2 -y && sudo apt-get install libapache2-mod-wsgi-py3 -y && sudo hostnamectl set-hostname django-server
 ```
 
-* Now we have to add a line to the file /etc/hosts
+* Now we have to add a new line to the file /etc/hosts
   * Edit the file by doing ```sudo nano /etc/hosts```
-  * You want to add a new second line with your EC2 ip. Make the file look like this (below). Do not change the name from "django-server"
-  * After adding the second line save your changes and get out of nano by doing Ctrl+X and typing "y"
+  * Note that after doing edits with nano you can save your changes and exit by doing Ctrl+X and typing "y"
+  * Make the file look like this (below). Use your EC2 ip address. Do not change the name from "django-server"
 ```
 127.0.0.1 localhost
 101.42.69.777 django-server
@@ -139,7 +139,6 @@ sudo apt-get update && sudo apt-get upgrade -y && sudo apt install python3.7 -y 
   * Make the line with "ALLOWED_HOSTS" look like this...
   * ```ALLOWED_HOSTS = ['localhost','101.42.69.777','www.example.com]```
   * Put in your EC2 ip and the name of the site you plan to buy on Google Domains
-  * Get out of nano by doing Ctrl+X and typing "y"
 
 * Next we also need to delete the Git folder and create a brand new one. You don't want to change this repository which holds a generic template. You are creating a new repository for your personal proejct
 ```
@@ -239,7 +238,6 @@ sudo cp /home/ubuntu/myproject/config_files/django_project_https_redirect.conf /
   * ```sudo nano /etc/apache2/sites-available/django_project.conf```
   * Update "ServerName" from www.example.com to the website you purchased on Google Domains
   * Update "ServerAdmin webmaster@localhost" to myemail@gmail.com
-  * Get out of nano by doing Ctrl+X and typing "y"
 
 * Now run certbot with  ```sudo certbot --apache```
   * Fill in your email address
