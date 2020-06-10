@@ -1,0 +1,9 @@
+# To start building your website, first make a new virtual environment for each separate machine
+# that you will do development on. This is why venv/ is in .gitignore
+# Also call it "venv" since mod_wsgi for apache2 will call out "venv" in the config files
+# Just run these commands from the "myproject" root directory folder
+
+pip3 install --upgrade virtualenv  # Upgrade your virtual environment
+virtualenv -p python3 venv        # Create your virtual environment
+source venv/bin/activate           # Activate your virtual environment
+pip3 install -r requirements.txt   # This installs all your dependencies
