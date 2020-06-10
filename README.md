@@ -292,7 +292,7 @@ SSLProtocol             -all +TLSv1.2 +TLSv1.3
 # Additional deployment steps
 
 * You need to change your Django SECRET_KEY which you can find in myproject/myapp/myapp/settings.py
-  * While you're in settings.py you're supposed to set DEBUG = False 
+  * While you're in settings.py you're supposed to set DEBUG = False for security purposes. If you set it to True then you get tons of useful information when your site has a problem. But this could give too much information to those with malicious intentions
 ```
 # From your EC2, start Python
 python3
