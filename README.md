@@ -70,11 +70,17 @@ Got it? Let's begin!
   * Click "Launch"
 
 * Create a new key pair (if you already have an existing key pair skip to the next step)
-  * Create a new key pair. These are the keys to get into your EC2 instance
+  * Add a key pair name, for example: AWS_EC2_key
+  * Click Download Key Pair
   * Click "Launch Instances"
   * Now let's set up our SSH keys. From the bash terminal...
 ```
-cd '/mnt/c/Users/Hongjinn Park/Downloads'                   # Go to your Downloads folder
+# Go to where you key pair was downloaded, for example
+cd '/mnt/c/Users/Hongjinn Park/Downloads'
+
+# Create a new folder to house your ssh keys if it doesn't already exist
+mkdir ~/.ssh
+
 scp AWS_EC2_key.pem ~/.ssh/AWS_EC2_key.pem                  # Copy the ssh key into your ssh folder in ~/.ssh
 sudo chmod 400 ~/.ssh/AWS_EC2_key.pem                       # Change security to make AWS happy (400 is read only)
 
