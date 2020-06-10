@@ -80,11 +80,11 @@ cd '/mnt/c/Users/Hongjinn Park/Downloads'
 # Create a new folder to house your ssh keys if it doesn't already exist
 mkdir ~/.ssh
 
-scp AWS_EC2_key.pem ~/.ssh/AWS_EC2_key.pem                  # Copy the ssh key into your ssh folder in ~/.ssh
+cp AWS_EC2_key.pem ~/.ssh/AWS_EC2_key.pem                  # Copy the ssh key into your ssh folder in ~/.ssh
 sudo chmod 400 ~/.ssh/AWS_EC2_key.pem                       # Change security to make AWS happy (400 is read only)
 
 # Same commands, all on one line
-cd '/mnt/c/Users/Hongjinn Park/Downloads' && scp AWS_EC2_key.pem ~/.ssh/AWS_EC2_key.pem && sudo chmod 400 ~/.ssh/AWS_EC2_key.pem
+cd '/mnt/c/Users/Hongjinn Park/Downloads' && cp AWS_EC2_key.pem ~/.ssh/AWS_EC2_key.pem && sudo chmod 400 ~/.ssh/AWS_EC2_key.pem
 ```
 
 * If you have an existing key pair
