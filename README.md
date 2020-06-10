@@ -325,12 +325,12 @@ pip3 install -r requirements.txt       # This installs all your dependencies
 ```
 
 * To see your site on your local machine, do ```python manage.py runserver```
-  * Go to your browser and type in the url "localhost:8000" or "http://127.0.0.1:8000"
+  * Go to your browser and type in the url localhost:8000 or http://127.0.0.1:8000
 
 * Create a superuser ```python manage.py createsuperuser```
   * Fill out the details
   * Go to your site and add "/admin" to the url. For example www.example.com/admin or "localhost:8000/admin"
-  * Log in with the super user account you created in step 1
+  * Log in with the super user account you created
 
 * Now you can start developing your site
 
