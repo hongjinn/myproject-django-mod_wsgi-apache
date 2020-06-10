@@ -163,7 +163,7 @@ git push -u origin master                                                 # Push
 
 * Now lets create a virtual environment folder on your EC2. This is critical as mod_wsgi will point to it
 ```
-# From your EC2 No need to modify the following commands. /home/ubuntu is the correct path
+# From your EC2
 pip3 install --upgrade virtualenv                             # Upgrade your virtual environment
 virtualenv -p python3 /home/ubuntu/myproject/venv             # Create your virtual environment
 source /home/ubuntu/myproject/venv/bin/activate               # Activate your virtual environment
