@@ -70,7 +70,7 @@ Got it? Let's begin!
 
 * Create a new key pair (if you already have an existing key pair skip to the next step)
   * Add a key pair name, for example: AWS_EC2_key
-  * Click Download Key Pair
+  * Click "Download Key Pair"
   * Click "Launch Instances"
   * Now let's set up our SSH keys. From the bash terminal...
 ```
