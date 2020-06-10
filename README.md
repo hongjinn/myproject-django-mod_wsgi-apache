@@ -54,8 +54,7 @@ Got it? Let's begin!
 # Create an AWS EC2 instance
 * Create a new account on AWS (Amazon Web Services) 
 
-* Click "Launch a virtual machine (With EC2)"
-  * Search for this service if you don't find it on the home page
+* Click "Launch a virtual machine (With EC2)", you may have to search for this service if it's not on the home page
 
 * Configure it as follows:
   * Select "Ubuntu Server 18.04 LTS (HVM), SSD Volume Type", you may have to search for it
