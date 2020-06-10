@@ -127,12 +127,12 @@ sudo apt-get update && sudo apt-get upgrade -y && sudo apt install python3.7 -y 
 
 # Gather Django files
 
-* Open another bash terminal so you have two open. One for your local computer and another for the EC2
+* Open another bash terminal so you have two open. One for your local machine and another for the EC2
 
-* Let's say you want your local development folder to be on your Desktop
-  * Go to your Desktop and create a new folder, you can call this anything you want. For example you could call it "exampledotcom" by doing ```mkdir '/mnt/c/Users/Hongjinn Park/Desktop/exampledotcom'```
+* Let's say you want your local development folder to be on your Desktop. The process will be this: develop on your local computer (ie add a "Contact Me" page) then push changes to your EC2 to see live on the web
+  * Go to your Desktop and create a new folder, you can call this anything you want. For instance "exampledotcom" by doing ```mkdir '/mnt/c/Users/Hongjinn Park/Desktop/exampledotcom'```
   * Navigate into the new folder you just created with ```cd !$```
-  * Get the files for your new site by doing ```git clone git@github.com:hongjinn/myproject.git```
+  * Get the files needed for your hello world template site by doing ```git clone git@github.com:hongjinn/myproject.git```
 
 * Now we have the template for your new site. But we have to do a few adjustments 
   * Edit the "settings.py" file with ```nano myproject/myapp/myapp/settings.py```
@@ -141,15 +141,14 @@ sudo apt-get update && sudo apt-get upgrade -y && sudo apt install python3.7 -y 
   * Put in your EC2 ip and the name of the site you plan to buy on Google Domains
   * Get out of nano by doing Ctrl+X and typing "y"
 
-* Next we also need to delete the Git folder and create a brand new one
-  * For example you don't want to change this repository which holds a generic template
+* Next we also need to delete the Git folder and create a brand new one. You don't want to change this repository which holds a generic template. You are creating a new repository for your personal proejct
 ```
 rm -rf .git                     # Delete the folder .git which is in the exampledotcom/myproject folder
-git init                        # Create a new repository on GitHub linked to the development folder on your desktkop
+git init                        # Do this command while in the exampledotcom/myproject folder
 git add -A                      # Adds all files to be committed
 git commit -m "first commit"    # Commit with the message "first commit"
 
-# Now go on GitHub and create a new repository. For example call it exampledotcom
+# Now go on GitHub and create a new repository. Call it exampledotcom
 git remote add origin git@github.com:hongjinn/exampledotcom.git           # Connect your development folder to GitHub
 git push -u origin master                                                 # Push your changes to GitHub
 ```
