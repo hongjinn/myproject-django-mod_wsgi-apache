@@ -93,7 +93,7 @@ cd '/mnt/c/Users/Hongjinn Park/Downloads' && cp AWS_EC2_key.pem ~/.ssh/AWS_EC2_k
   * Click "Launch Instances"
 
 * Click "View Instances"
-  * In the "Name" column enter whatever name you want, for instance the name of the site you plan to create "example.com" and note that you can change it whenever you want
+  * In the "Name" column enter whatever you want, for instance "example.com" and note that you can change this field later
   * At the bottom in the "Description" tab, find your IPv4 Public IP. You will use this multiple times throughout this guide. Let's say mine is 101.69.42.777
 
 * SSH into your AWS EC2 instance and let's install some stuff
