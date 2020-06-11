@@ -1,6 +1,6 @@
 # Website from scratch
 
-Create and deploy a Django website with a pretty domain name and https. Last updated: 6/10/20
+Create and deploy a Django website with a pretty domain name and https.
 
 * Django 3.0.7
 * Apache 2
