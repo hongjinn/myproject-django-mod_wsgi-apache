@@ -22,7 +22,7 @@ You could develop a fully functional site on your computer and then get it on th
 * My personal computer is on Windows 10 Pro. I installed "Windows Subsystem for Linux" and I use that for all bash commands
   
 ```
-# Directory structure (on your local machine)
+# Directory structure (on your local machine where you will develop cool things)
 # You can change the name of the folder "whateveryouwant" but I wouldn't rename/move anything else
 # For example, do not change the name of "myproject" to "bobsmithsite" or "twitterclone"
 # Of course you can and should create brand new folders/apps using "django-admin startapp twitterclone"
