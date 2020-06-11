@@ -24,6 +24,7 @@ You could develop a fully functional site on your computer and then get it on th
 # Directory structure (on your local machine)
 # Except for the folder "whateveryouwant" I would not change any of the following folder/file names
 # For example, do not change the name of "myproject" (if you change names then modify commands in this guide and also config files)
+# Of course you can create new folders/apps (for example a new app called foo) with "django-admin startapp foo"
 
 whateveryouwant/            # This is the folder you can call whatever you want and is on your local machine but not on the EC2
     myproject/              # The is the root folder of this repository. This folder is on the EC2 and should keep the name myproject
