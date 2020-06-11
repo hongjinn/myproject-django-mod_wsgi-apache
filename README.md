@@ -22,9 +22,9 @@ You could develop a fully functional site on your computer and then get it on th
   
 ```
 # Directory structure (on your local machine)
-# Except for the folder "whateveryouwant" I would not change any of the following folder/file names below
+# You can change the name of the folder "whateveryouwant" but I wouldn't rename/move anything else
 # For example, do not change the name of "myproject" to "bobsmithsite" or "twitterclone"
-# Of course you can create new folders/apps with "django-admin startapp twitterclone"
+# Of course you can and should create brand new folders/apps using "django-admin startapp twitterclone"
 
 whateveryouwant/            # This is the folder you can call whatever you want and is on your local machine but not on the EC2
     myproject/              # The is the root folder of this repository. This folder is on the EC2 and should keep the name myproject
