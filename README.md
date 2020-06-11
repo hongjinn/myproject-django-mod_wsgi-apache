@@ -22,17 +22,17 @@ You could develop a fully functional site on your computer and then get it on th
   
 ```
 # Directory structure (if you change folder/file names then adjust configuration files accordingly)
-
-myproject/             # The root directory or master folder is a container for your project
-   myapp/              # Folder for your Django site
-      mysite/          # Houses the hello world template
-   venv/               # Folder for the virtual environment that wsgi will point to
-   config_files/       # Folder for Apache config files
-   .git/               # Folder for Git
-   .gitignore          # File that tells Git what to ignore
-   requirements.txt    # Python dependencies
-   README.md           # The file that generates these instructions
-   Dockerfile          # Incomplete... more to come
+whateveryouwant/            # This folder you can call whatever you want and is on your local machine
+    myproject/              # The is the root folder of this repository
+        myapp/              # Folder for your Django site
+            mysite/         # Houses the hello world template
+        venv/               # Folder for the virtual environment that wsgi will point to
+        config_files/       # Folder for Apache config files
+        .git/               # Folder for Git
+        .gitignore          # File that tells Git what to ignore
+        requirements.txt    # Python dependencies
+        README.md           # The file that generates these instructions
+        Dockerfile          # Incomplete... more to come
 ```
 
 ## Major steps
