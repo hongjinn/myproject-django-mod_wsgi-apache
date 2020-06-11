@@ -7,6 +7,7 @@ Create and deploy a Django website with a pretty domain name and https.
 * mod_wsgi
 * SQLite
 * AWS EC2
+* Google Domains
 
 ## Strategy of this guide
 
