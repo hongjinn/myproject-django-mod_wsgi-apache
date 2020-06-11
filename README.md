@@ -26,15 +26,15 @@ You could develop a fully functional site on your computer and then get it on th
 # For example, do not change the name of "myproject" to "bobsmithsite" or "twitterclone"
 # Of course you can and should create brand new folders/apps using "django-admin startapp twitterclone"
 
-whateveryouwant/            # This is the folder you can call whatever you want and is on your local machine but not on the EC2
+whateveryouwant/            # This is the only folder you can name whatever you want and is on your local machine but not on the EC2
     myproject/              # The is the root folder of this repository. This folder is on the EC2 and should keep the name myproject
-        myapp/              # Folder for your Django site
+        myapp/              # Folder for your Django app, this is the Django folder itself
             mysite/         # Houses the hello world template
-        venv/               # Folder for the virtual environment that wsgi will point to
+        venv/               # Folder for the virtual environment that is needed for Apache/mod_wsgi
         config_files/       # Folder for Apache config files
         .git/               # Folder for Git
         .gitignore          # File that tells Git what to ignore
-        requirements.txt    # Python dependencies
+        requirements.txt    # Python dependencies, for example Django REST framework
         README.md           # The file that generates these instructions
         Dockerfile          # Incomplete... more to come
 ```
