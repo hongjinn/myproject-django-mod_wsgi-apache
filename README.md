@@ -21,9 +21,12 @@ You could develop a fully functional site on your computer and then get it on th
 * My personal computer is on Windows 10 Pro. I installed "Windows Subsystem for Linux" and I use that for all bash commands
   
 ```
-# Directory structure (if you change folder/file names then adjust configuration files accordingly)
-whateveryouwant/            # This folder you can call whatever you want and is on your local machine
-    myproject/              # The is the root folder of this repository
+# Directory structure (on your local machine)
+# Except for the folder "whateveryouwant" I would not change any of the following folder/file names
+# For example, do not change the name of "myproject" (if you change names then modify commands in this guide and also config files)
+
+whateveryouwant/            # This is the folder you can call whatever you want and is on your local machine but not on the EC2
+    myproject/              # The is the root folder of this repository. This folder is on the EC2 and should keep the name myproject
         myapp/              # Folder for your Django site
             mysite/         # Houses the hello world template
         venv/               # Folder for the virtual environment that wsgi will point to
