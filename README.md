@@ -14,9 +14,6 @@ You could develop a fully functional site on your computer and then get it on th
 
 ## Before we begin
 
-* Prerequisites to understand this guide
-  * Some basic comfort with GitHub and bash commands and nano
- 
 * Unfortunately you can't just copy paste everything. I tried to make it that way as much as possible
   * You will see the fake ip address of 101.42.69.777, you have to replace it with the ip address of the EC2 instance you create
   * You will see www.example.com, you have to replace it with the domain name that you purchase on Google Domains
