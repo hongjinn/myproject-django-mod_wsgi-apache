@@ -252,12 +252,16 @@ sudo cp /home/ubuntu/myproject/config_files/django_project_https_redirect.conf /
   * Choose option 2 to redirect http traffic to https
   
 * Now go back here to the original config file ```sudo nano /etc/apache2/sites-available/django_project.conf```
-  * Delete lines on the bottom portion. Everything from Alias to Rewrite... make it look like this
+  * Delete lines on the bottom portion and comment out the lines that start with "Rewrite". Make it look like this
 ```
     #Include conf-available/serve-cgi-bin.conf
-   
-RewriteEngine on
-RewriteCond %{SERVER_NAME} =www.example.com
+ 
+Redirect permanent / https://www.example.com
+
+#RewriteEngine on
+#RewriteCond %{SERVER_NAME} =www.example.com
+#RewriteRule ^ https://%{SERVER_NAME}%{REQUEST_URI} [END,NE,R=permanent]
+</VirtualHost>  
 ```
 
 * Now edit https config file ```sudo nano /etc/apache2/sites-available/django_project-le-ssl.conf```
