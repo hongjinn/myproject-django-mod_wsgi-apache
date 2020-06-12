@@ -281,7 +281,7 @@ RewriteCond %{SERVER_NAME} =www.example.com
 
 * You are on the web as https!
 
-* (Optional/Not Validated) If you want to disable TLSv1.0 and TLSv1.1 then do
+* (Optional) If you want to disable TLSv1.0 and TLSv1.1 then you can do the following commands. This could interfere with your automated SSL certificate renewal
 ```
 sudo nano /etc/letsencrypt/options-ssl-apache.conf         # Modify this file
 
