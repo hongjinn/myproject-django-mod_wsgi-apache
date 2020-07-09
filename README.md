@@ -388,11 +388,12 @@ psql
 \dt												# Display tables
 >\q            # Exit psql, the PostgreSQL interactive terminal program
 >exit          # Exit postgres server
+```
 
-# Activate your venv
-pip install psycopg2
+* Activate your venv and do ```pip install psycopg2```
 
-# Now update settings.py file
+* Now update settings.py file
+```
 DATABASES = { 'default': {
   'ENGINE': 'django.db.backends.postgresql_psycopg2',
   'NAME': 'mydb',
@@ -404,3 +405,13 @@ DATABASES = { 'default': {
 }
 ```
 
+* Now do your migrations ```python manage.py makemigrations``` and ```python manage.py migrate```
+
+* Restart server with ```sudo service apache2 restart```
+
+* You can now see your data in Postgresql with
+```
+psql mydb
+select * from <your_model>;
+\dt
+```
