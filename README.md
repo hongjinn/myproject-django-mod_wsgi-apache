@@ -363,3 +363,44 @@ sudo chmod 664 db.sqlite3             # 664 (owner can read/write, apache can re
 ```
 
 * See what ports are being listened to (ie 80,22,443,53) with ```netstat -ant```
+
+# PostgreSQL on EC2
+
+* Instructions incomplete... I'm not sure how to connect your home computer to the postgres server on the EC2. This will work on the EC2 itself
+
+```
+sudo apt-get install postgresql
+sudo apt-get install python-psycopg2                     # This will be used with Django
+sudo apt-get install libpq-dev
+
+sudo passwd postgres                                     # Set a password for the server "postgres" that's on your EC2
+sudo service postgresql start
+
+su - postgres
+createuser --interactive --pwprompt
+# User is "ubuntu"
+
+createdb mydb
+
+# Let's check this worked
+psql
+\du												# Display users
+\dt												# Display tables
+>\q            # Exit psql, the PostgreSQL interactive terminal program
+>exit          # Exit postgres server
+
+# Activate your venv
+pip install psycopg2
+
+# Now update settings.py file
+DATABASES = { 'default': {
+  'ENGINE': 'django.db.backends.postgresql_psycopg2',
+  'NAME': 'mydb',
+  'USER': 'ubuntu',
+  'PASSWORD': '<password>',
+  'HOST': 'localhost',
+  'PORT': '5432',
+  }
+}
+```
+
