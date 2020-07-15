@@ -3,10 +3,6 @@
 # Also call it "venv" since mod_wsgi for apache2 will call out "venv" in the config files
 # Just run these commands from the "myproject" root directory folder
 
-# Let's create a virtual environment
-pip3 install --upgrade virtualenv
-virtualenv -p python3 venv
-
 # You can also use this command to create a virtual environment
 python3 -m venv venv               # Creates a venv called "venv"
 
