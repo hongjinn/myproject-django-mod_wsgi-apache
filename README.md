@@ -366,8 +366,6 @@ sudo chmod 664 db.sqlite3             # 664 (owner can read/write, apache can re
 
 # PostgreSQL on EC2
 
-* Instructions incomplete... I'm not sure how to connect your home computer to the postgres server on the EC2. This will work on the EC2 itself
-
 ```
 sudo apt-get install postgresql
 sudo apt-get install python-psycopg2                     # This will be used with Django
