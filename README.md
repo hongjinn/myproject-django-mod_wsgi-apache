@@ -382,10 +382,10 @@ createdb mydb
 
 # Let's check this worked
 psql
-\du												# Display users
-\dt												# Display tables
->\q            # Exit psql, the PostgreSQL interactive terminal program
->exit          # Exit postgres server
+\du										# Display users
+\dt										# Display tables
+>\q          # Exit psql, the PostgreSQL interactive terminal program
+>exit        # Exit postgres server
 ```
 
 * Activate your venv and do ```pip install psycopg2```
