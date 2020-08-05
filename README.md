@@ -364,7 +364,7 @@ sudo chmod 664 db.sqlite3             # 664 (owner can read/write, apache can re
 
 * See what ports are being listened to (ie 80,22,443,53) with ```netstat -ant```
 
-# PostgreSQL on EC2
+# PostgreSQL on the EC2 itself
 
 ```
 sudo apt-get install postgresql
