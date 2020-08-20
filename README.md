@@ -3,7 +3,7 @@
 Create and deploy a Django website with a pretty domain name and https.
 
 * Django (Python framework)
-* Apache (web server)
+* Apache2 (web server)
 * mod_wsgi (let's Apache interface with Python)
 * SQLite (database)
 * AWS EC2 (virtual private machine)
