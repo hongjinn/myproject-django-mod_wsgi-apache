@@ -217,7 +217,7 @@ sudo scp /home/ubuntu/myproject/config_files/django_project.conf /etc/apache2/si
   * You want to add two rows that ultimately look like below
   * Do this by filling out the fields and hitting "Add"
 ```
-@       A       1h     52.53.181.54
+@       A       1h     101.42.69.777
 www     CNAME   1h     example.com.
 ```
 
