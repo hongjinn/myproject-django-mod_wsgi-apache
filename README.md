@@ -137,6 +137,9 @@ sudo apt-get update && sudo apt-get upgrade -y && sudo apt install python3.7 -y 
   * Go to your Desktop and create a new folder, you can call this anything you want. For instance "exampledotcom" by doing ```mkdir '/mnt/c/Users/Hongjinn Park/Desktop/exampledotcom'```
   * Navigate into the new folder you just created with ```cd !$```
   * Get the files needed for your hello world template site by doing ```git clone git@github.com:hongjinn/myproject.git```
+  
+* It's important that you change the folder name to myproject as the config files assume this
+  * ```mv myproject-django-mod_wsgi-apache myproject```
 
 * Now we have the template for your new site. But we have to do a few adjustments 
   * Edit the "settings.py" file with ```nano myproject/myapp/myapp/settings.py```
