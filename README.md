@@ -351,7 +351,7 @@ pip3 install -r requirements.txt       # This installs all your dependencies
 
 ## Other development notes
 
-* It's not very unique but I like using the Starter Template found here: https://getbootstrap.com/docs/4.3/getting-started/introduction/
+* It's not that unique but I like using the Starter Template found here: https://getbootstrap.com/docs/4.3/getting-started/introduction/
 
 * It's good practice to use template extensions: https://docs.djangoproject.com/en/3.0/ref/templates/language/
 ---
